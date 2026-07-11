@@ -6,10 +6,10 @@ import { Navbar } from "./navbar"
 
 export const Background = () => {
     return (
-        <div className="relative h-screen w-screen no-scrollbar">
+        <div className="relative h-screen w-screen overflow-hidden no-scrollbar text-white">
 
             <Image
-                src="/images/image2.png"
+                src="/images/image.png"
                 alt=""
                 fill
                 className="object-fill"
@@ -20,7 +20,6 @@ export const Background = () => {
                 <Navbar />
                 <MainIntro />
             </div>
-
         </div>
     )
 }
