@@ -8,13 +8,7 @@ import {
     DropdownMenuSeparator,
 } from "@/components/ui/dropdown-menu"
 import Link from "next/link"
-import { NavItems } from "./constant"
-
-interface MenuDropdownProps {
-    children: React.ReactElement;
-    open: boolean;
-    onOpenChange: (open: boolean) => void;
-}
+import { NavItems, MenuDropdownProps } from "./constant"
 
 
 export const MenuDropdown = ({ children, open, onOpenChange }: MenuDropdownProps) => {
