@@ -38,7 +38,7 @@ export const MainIntro = () => {
                         className="absolute bottom-3 left-1/2 -translate-x-1/2 rounded-lg bg-black/85 border border-white/10 px-2 py-1 flex flex-row items-center gap-3 text-xs text-gray-300 backdrop-blur-md w-max whitespace-nowrap shadow-2xl"
                     >
                         <span>
-                            By using tanishqjangir.in, you accept our{" "}
+                            By using Escanor, you accept our{" "}
                             <Link href="" className="underline underline-offset-4 text-white hover:text-white/80 transition-colors">
                                 cookie policy
                             </Link>

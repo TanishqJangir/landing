@@ -21,7 +21,7 @@ export const Navbar = () => {
             >
 
                 <div className="text-xl tracking-wide md:hidden">
-                    Tanishq
+                    Escanor
                 </div>
 
                 <div className="hidden md:block">
@@ -36,7 +36,7 @@ export const Navbar = () => {
                 </div>
 
                 <div className="text-xl tracking-wide hidden md:block">
-                    Tanishq
+                    Escanor
                     {/* <span className="font-bold">•</span> */}
                 </div>
 
