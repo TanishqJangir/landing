@@ -3,17 +3,7 @@
 import Link from "next/link"
 import { motion } from "motion/react"
 import { NavActionButton } from "./navActionButton"
-
-interface NavItems {
-    title: string,
-    href: string
-}
-
-const NavItems: NavItems[] = [
-    { title: "Home", href: "/" },
-    { title: "Features", href: "/feature" },
-    { title: "Contact", href: "/contact" },
-]
+import { NavItems } from "./constant"
 
 
 export const Navbar = () => {

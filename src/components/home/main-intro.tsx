@@ -35,7 +35,7 @@ export const MainIntro = () => {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0, transition: { duration: 1, delay: 1, ease: [0.16, 1, 0.3, 1] } }}
                         exit={{ opacity: 0, y: 30, transition: { duration: 0.4, ease: [0.16, 1, 0.3, 1] } }}
-                        className="absolute bottom-3 left-1/2 -translate-x-1/2 rounded-lg bg-black/85 border border-white/10 px-3 py-1 flex flex-col sm:flex-row items-center gap-3 text-xs md:text-sm text-gray-300 backdrop-blur-md w-[90%] sm:w-auto max-w-lg sm:max-w-none shadow-2xl"
+                        className="absolute bottom-3 left-1/2 -translate-x-1/2 rounded-lg bg-black/85 border border-white/10 px-2 py-1 flex flex-row items-center gap-3 text-xs text-gray-300 backdrop-blur-md w-max whitespace-nowrap shadow-2xl"
                     >
                         <span>
                             By using tanishqjangir.in, you accept our{" "}
