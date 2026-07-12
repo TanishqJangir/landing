@@ -27,24 +27,31 @@ export const Navbar = () => {
                     delay: 0.5,
                     ease: [0.16, 1, 0.3, 1], // expo-out, no bounce
                 }}
-                className="flex w-full justify-between px-8 py-6 text-white"
+                className="flex w-full justify-between px-4 md:px-8 py-6 text-white border-b md:border-none border-gray-500"
             >
 
-                <div className="flex flex-col text-gray-200">
-                    {NavItems.map((item) => (
-                        <Link href={""} key={item.title} className="hover:font-semibold hover:text-white">
-                            {item.title}
-                        </Link>
-                    )
-                    )}
+                <div className="text-xl tracking-wide md:hidden">
+                    Tanishq
                 </div>
-                <div className="text-xl tracking-wide">
+
+                <div className="hidden md:block">
+                    <div className="flex flex-col text-gray-200">
+                        {NavItems.map((item) => (
+                            <Link href={""} key={item.title} className="hover:font-semibold hover:text-white">
+                                {item.title}
+                            </Link>
+                        )
+                        )}
+                    </div>
+                </div>
+
+                <div className="text-xl tracking-wide hidden md:block">
                     Tanishq
                     {/* <span className="font-bold">•</span> */}
                 </div>
-                
+
                 <NavActionButton />
-                
+
             </motion.div>
         </>
     )

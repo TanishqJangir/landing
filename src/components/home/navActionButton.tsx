@@ -1,17 +1,51 @@
+"use client"
+
 
 import { Button } from "../ui/button"
-import { ArrowRightIcon } from "lucide-react"
+import { ArrowRightIcon, Menu, X } from "lucide-react"
+import { useState } from "react"
+import { motion } from "motion/react"
+
 
 export const NavActionButton = () => {
+
+    const [iconState, setIconState] = useState("menu")
+
     return (
-        <Button
-            variant="default"
-            className="rounded-full cursor-pointer bg-white font-bold text-black hover:bg-white/70 text-lg pr-1 py-4"
-        >
-            Click Me
-            <div className="bg-black text-white p-1 rounded-full">
-                <ArrowRightIcon />
+        <>
+            <div className="hidden md:block">
+                <Button
+                    variant="default"
+                    className="rounded-sm cursor-pointer bg-white text-black hover:bg-white/70 text-sm gap-2 py-4 pl-3 pr-0.5 flex flex-row"
+                >
+                    Get in touch
+                    <span className="bg-black text-white p-1.5 rounded-sm">
+                        <ArrowRightIcon />
+                    </span>
+                </Button>
             </div>
-        </Button>
+
+            <Button 
+                variant="ghost" 
+                className="relative flex md:hidden items-center justify-center cursor-pointer text-white hover:text-white/80 w-9 h-9 p-0 hover:bg-transparent hover:text-white"
+                onClick={() => setIconState(iconState === "menu" ? "close" : "menu")}
+            >
+                <motion.div
+                    animate={iconState === "menu" ? { rotate: 0, opacity: 1, scale: 1 } : { rotate: 90, opacity: 0, scale: 0 }}
+                    transition={{ duration: 0.2 }}
+                    className="absolute"
+                >
+                    <Menu className="size-5" />
+                </motion.div>
+                <motion.div
+                    initial={{ rotate: -90, opacity: 0, scale: 0 }}
+                    animate={iconState === "close" ? { rotate: 0, opacity: 1, scale: 1 } : { rotate: -90, opacity: 0, scale: 0 }}
+                    transition={{ duration: 0.2 }}
+                    className="absolute"
+                >
+                    <X className="size-5" />
+                </motion.div>
+             </Button>
+        </>
     )
 }
