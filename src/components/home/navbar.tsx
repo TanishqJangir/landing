@@ -23,8 +23,8 @@ export const Navbar = () => {
                 initial={{ opacity: 0, y: -14 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{
-                    duration: 0.65,
-                    delay: 0.5,
+                    duration: 1,
+                    delay: 0.7,
                     ease: [0.16, 1, 0.3, 1], // expo-out, no bounce
                 }}
                 className="flex w-full justify-between px-4 md:px-8 py-6 text-white border-b md:border-none border-gray-500"
