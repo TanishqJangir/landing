@@ -20,7 +20,7 @@ export const Navbar = () => {
                 className="flex w-full justify-between px-4 md:px-8 py-6 text-white border-b md:border-none border-gray-500"
             >
 
-                <div className="text-xl tracking-wide md:hidden">
+                <div className="text-xl tracking-wide md:hidden font-bold">
                     Escanor
                 </div>
 
@@ -35,7 +35,7 @@ export const Navbar = () => {
                     </div>
                 </div>
 
-                <div className="text-xl tracking-wide hidden md:block">
+                <div className="text-xl font-bold tracking-wide hidden md:block">
                     Escanor
                     {/* <span className="font-bold">•</span> */}
                 </div>
