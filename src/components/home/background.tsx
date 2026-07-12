@@ -1,7 +1,6 @@
 
 import Image from "next/image"
 import { MainIntro } from "./main-intro"
-import { Navbar } from "./navbar"
 
 
 export const Background = () => {
