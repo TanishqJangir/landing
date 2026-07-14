@@ -19,9 +19,6 @@ export const Background = () => {
 
                 <MainIntro />
             </div>
-            <div className="h-screen">
-                Hii
-            </div>
         </>
     )
 }
